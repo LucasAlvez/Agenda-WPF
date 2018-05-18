@@ -1,0 +1,28 @@
+﻿<Window x:Class="Agenda.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="29,7,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="txtId" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="29,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="738" FontSize="18"/>
+
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="29,68,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="29,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="738" FontSize="18"/>
+
+        <Label Content="E-mail" HorizontalAlignment="Left" Margin="29,130,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="29,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="738" FontSize="18"/>
+
+        <Label Content="Telefone" HorizontalAlignment="Left" Margin="29,196,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="txtTel" HorizontalAlignment="Left" Height="23" Margin="29,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="738" FontSize="18"/>
+        
+        <Button Name="btnInserir" Content="Inserir" HorizontalAlignment="Left" Margin="29,274,0,0" VerticalAlignment="Top" Width="111" FontSize="18" FontWeight="Bold" Click="btnInserir_Click"/>
+        <Button Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="155,274,0,0" VerticalAlignment="Top" Width="111" FontSize="18" FontWeight="Bold"/>
+        <Button Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="292,274,0,0" VerticalAlignment="Top" Width="103" FontSize="18" FontWeight="Bold" Click="btnSalvar_Click"/>
+        <Button Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="416,274,0,0" VerticalAlignment="Top" Width="103" FontSize="18" FontWeight="Bold"/>
+        <Button Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="537,274,0,0" VerticalAlignment="Top" Width="103" FontSize="18" FontWeight="Bold" Click="btnExcluir_Click"/>
+        <Button Name="btnLocalizar" Content="Localizar" HorizontalAlignment="Left" Margin="664,274,0,0" VerticalAlignment="Top" Width="103" FontSize="18" FontWeight="Bold" Click="btnLocalizar_Click"/>
+        <DataGrid SelectionChanged="dgvDados_SelectionChanged" Name="dgvDados" IsReadOnly="True" SelectionMode="Single" HorizontalAlignment="Left" Margin="10,327,0,0" VerticalAlignment="Top" Height="232" Width="757"/>
+
+
+    </Grid>
+</Window>
